@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        GitHub: Compact file tree
 // @namespace   Violentmonkey Scripts
-// @match       https://github.com/*/*/pull/*/files
+// @match       https://github.com/*/*/pull/**
 // @grant       none
 // @version     1.0
 // @author      -
