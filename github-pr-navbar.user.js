@@ -4,7 +4,7 @@
 // @match       https://github.com/*/*/pull/**
 // @updateURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-navbar.user.js
 // @grant       none
-// @version     1.1
+// @version     1.2
 // @author      Felix Dombek
 // @description 8/1/2022, 3:01:57 PM
 // ==/UserScript==
