@@ -5,7 +5,7 @@
 // @updateURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-compact-filetree.user.js
 // @grant       none
 // @version     1.1
-// @author      -
+// @author      Felix Dombek
 // @description 7/20/2022, 5:34:29 PM
 // ==/UserScript==
 
