@@ -2,8 +2,9 @@
 // @name        GitHub: Compact file tree
 // @namespace   Violentmonkey Scripts
 // @match       https://github.com/*/*/pull/**
+// @updateURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-compact-filetree.user.js
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      -
 // @description 7/20/2022, 5:34:29 PM
 // ==/UserScript==

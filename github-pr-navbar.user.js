@@ -2,8 +2,9 @@
 // @name        GitHub: PR Navbar and Expand all
 // @namespace   Violentmonkey Scripts
 // @match       https://github.com/*/*/pull/**
+// @updateURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-navbar.user.js
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      Felix Dombek
 // @description 8/1/2022, 3:01:57 PM
 // ==/UserScript==
