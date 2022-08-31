@@ -5,7 +5,7 @@
 // @updateURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-expandall.user.js
 // @downloadURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-expandall.user.js
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      Felix Dombek
 // @description Thu Sep 1 2022. Based on https://gist.github.com/mdziekon/a71c46091b716d57136791fe22672f7e
 // ==/UserScript==
