@@ -5,7 +5,7 @@
 // @updateURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-expandall.user.js
 // @downloadURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-expandall.user.js
 // @grant       none
-// @version     1.1
+// @version     1.2
 // @author      Felix Dombek
 // @description Thu Sep 1 2022. Based on https://gist.github.com/mdziekon/a71c46091b716d57136791fe22672f7e
 // ==/UserScript==
@@ -58,7 +58,7 @@ function injectButton() {
   expandAllContainer.id = "expand-all-diffs-container";
   const expandAllButton = document.createElement("button");
   expandAllButton.innerHTML = "<strong>Expand all diffs</strong>";
-  expandAllButton.className = "btn btn-link btn-muted m-1 mr-4";
+  expandAllButton.className = "btn-link btn-muted m-1 mr-4";
   expandAllButton.setAttribute("data-toggle", "button");
   evtListener = expandAllButton.addEventListener("click", onExpandAllClicked);
 
