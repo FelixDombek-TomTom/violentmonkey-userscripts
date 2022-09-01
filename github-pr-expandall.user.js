@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name        GitHub: PR Expand all
 // @namespace   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts
-// @match       https://github.com/*/*/pull/**
+// @match       https://github.com/**
 // @updateURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-expandall.user.js
 // @downloadURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-expandall.user.js
 // @grant       none
-// @version     1.2
+// @version     1.3
 // @author      Felix Dombek
 // @description Thu Sep 1 2022. Based on https://gist.github.com/mdziekon/a71c46091b716d57136791fe22672f7e
 // ==/UserScript==
