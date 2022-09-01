@@ -1,5 +1,4 @@
 # violentmonkey-userscripts
-Violentmonkey Userscripts
 
 ## Compact filetree
 Install: https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-compact-filetree.user.js
@@ -8,7 +7,7 @@ Effect 1:
 <kbd>![image](https://user-images.githubusercontent.com/77961370/187915409-19b7f711-a0ff-4f11-aaab-e767cdda5f3a.png)</kbd>
 
 Effect 2:
-<kbd>![image](https://user-images.githubusercontent.com/77961370/187916114-3b05725d-52e2-4449-8b0c-37593c3a9426.png)>/kbd>
+<kbd>![image](https://user-images.githubusercontent.com/77961370/187916114-3b05725d-52e2-4449-8b0c-37593c3a9426.png)</kbd>
 
 
 ## Expand all diffs
