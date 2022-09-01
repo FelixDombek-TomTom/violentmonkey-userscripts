@@ -1,5 +1,7 @@
 # violentmonkey-userscripts
 
+First, install ViolentMonkey: https://violentmonkey.github.io/get-it/
+
 ## Compact filetree
 Install: https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-compact-filetree.user.js
 
