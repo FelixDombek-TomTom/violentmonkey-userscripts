@@ -5,7 +5,7 @@
 // @updateURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-expandall.user.js
 // @downloadURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-expandall.user.js
 // @grant       none
-// @version     1.4
+// @version     1.5
 // @author      Felix Dombek
 // @description Thu Sep 1 2022. Based on https://gist.github.com/mdziekon/a71c46091b716d57136791fe22672f7e
 // ==/UserScript==
@@ -20,13 +20,13 @@ function expandAllUnexpanded() {
         | (elem.nextElementSibling && (shouldExpandUp = elem.nextElementSibling.hasAttribute("data-hunk")))) {
       let expandAllClicked = false;
       if (shouldExpandDown) {
-        let downElem = elem.querySelector("[title='Expand All'], [title='Expand Down']");
-        expandAllClicked = downElem.getAttribute("title") == "Expand All";
+        let downElem = elem.querySelector("[aria-label='Expand All'], [aria-label='Expand Down']");
+        expandAllClicked = downElem.getAttribute("aria-label") == "Expand All";
         downElem.click();
         ++clicked;
       }
       if (!expandAllClicked && shouldExpandUp) {
-        let upElem = elem.querySelector("[title='Expand All'], [title='Expand Up']");
+        let upElem = elem.querySelector("[aria-label='Expand All'], [aria-label='Expand Up']");
         upElem.click();
         ++clicked;
       }
