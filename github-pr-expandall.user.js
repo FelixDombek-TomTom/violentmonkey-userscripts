@@ -5,7 +5,7 @@
 // @updateURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-expandall.user.js
 // @downloadURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-expandall.user.js
 // @grant       none
-// @version     1.3
+// @version     1.4
 // @author      Felix Dombek
 // @description Thu Sep 1 2022. Based on https://gist.github.com/mdziekon/a71c46091b716d57136791fe22672f7e
 // ==/UserScript==
@@ -13,7 +13,7 @@
 let evtListener;
 
 function expandAllUnexpanded() {
-  let clicked = false;
+  let clicked = 0;
   document.querySelectorAll(".diff-table .js-expandable-line").forEach(elem => {
     let shouldExpandDown = false, shouldExpandUp = false;
     if ((elem.previousElementSibling && (shouldExpandDown = elem.previousElementSibling.hasAttribute("data-hunk")))
@@ -23,16 +23,17 @@ function expandAllUnexpanded() {
         let downElem = elem.querySelector("[title='Expand All'], [title='Expand Down']");
         expandAllClicked = downElem.getAttribute("title") == "Expand All";
         downElem.click();
-        clicked = true;
+        ++clicked;
       }
       if (!expandAllClicked && shouldExpandUp) {
         let upElem = elem.querySelector("[title='Expand All'], [title='Expand Up']");
         upElem.click();
-        clicked = true;
+        ++clicked;
       }
     }
   })
-  return clicked;
+  console.log(`ExpandAll: expanded ${clicked} diff locations.`)
+  return clicked > 0;
 }
 
 function onExpandAllClicked() {

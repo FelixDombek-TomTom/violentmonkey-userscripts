@@ -5,7 +5,7 @@
 // @updateURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-navbar.user.js
 // @downloadURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-navbar.user.js
 // @grant       none
-// @version     1.8
+// @version     1.9
 // @author      Felix Dombek
 // @description 8/1/2022, 3:01:57 PM
 // ==/UserScript==
@@ -25,7 +25,7 @@ addGlobalStyle(`
 `);
 
 function createClone() {
-  let tabnavTabs = document.querySelector(".tabnav-tabs");
+  let tabnavTabs = document.querySelector("nav.tabnav-tabs");
   if (!tabnavTabs) { return null; }
   let clonedTabs = tabnavTabs.cloneNode(true);
   clonedTabs.querySelectorAll("a").forEach(elem => {
