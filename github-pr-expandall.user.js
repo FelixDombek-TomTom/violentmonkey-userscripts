@@ -5,7 +5,7 @@
 // @updateURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-expandall.user.js
 // @downloadURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-expandall.user.js
 // @grant       none
-// @version     1.5
+// @version     1.6
 // @author      Felix Dombek
 // @description Thu Sep 1 2022. Based on https://gist.github.com/mdziekon/a71c46091b716d57136791fe22672f7e
 // ==/UserScript==
@@ -50,7 +50,7 @@ function injectButton() {
   const codeStats = document.querySelector("span.diffbar-item");
 
   if (codeStats === null) {
-    console.log("element to append to not found")
+    //console.log("element to append to not found")
     return;
   }
 
