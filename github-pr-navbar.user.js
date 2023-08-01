@@ -21,7 +21,7 @@ function addGlobalStyle(css) {
 addGlobalStyle(`
   #own-clonedtabs .tabnav-tab { padding: 5px 2px; max-width: 20px; height: 22px; white-space: nowrap;
                                 overflow: hidden; border: 0; border-radius: 0px !important; display: flex; }
-  #own-clonedtabs { margin: -5px 0 0 10px; background-color: rgba(255, 255, 255, 1.0); min-width: 80px; }
+  #own-clonedtabs { margin: -5px 0 0 10px; min-width: 80px; }
 `);
 
 function createClone() {
