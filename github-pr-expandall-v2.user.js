@@ -5,7 +5,7 @@
 // @updateURL   https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-expandall-v2.user.js
 // @downloadURL https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-expandall-v2.user.js
 // @grant       none
-// @version     2.0
+// @version     2.0.1
 // @author      Felix Dombek
 // @description Auto‑expand all hidden hunks in GitHub PR diffs (Feb 2026 update for new React diff layout).
 // ==/UserScript==
