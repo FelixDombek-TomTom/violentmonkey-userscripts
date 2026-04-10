@@ -15,6 +15,8 @@ Effect 2:
 ## Expand all diffs
 Install: https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-expandall.user.js
 
+Install for new 2026+ diff view: https://github.com/FelixDombek-TomTom/violentmonkey-userscripts/raw/main/github-pr-expandall-v2.user.js
+
 Effect:
 <kbd>![image](https://user-images.githubusercontent.com/77961370/187915026-5c3d81bc-876e-484e-b118-cb64a5e8ed92.png)</kbd>
 
