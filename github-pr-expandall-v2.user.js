@@ -12,9 +12,9 @@
 
 let evtListener;
 
-// --- Core expansion logic adapted to new layout ---
-function expandAllUnexpanded() {
-  let clicked = 0;
+// --- Snapshot all currently visible expansion buttons ---
+function snapshotExpansionButtons() {
+  const buttons = [];
 
   // New GitHub layout: expand buttons live inside diff-hunk-cell
   document.querySelectorAll("td.diff-hunk-cell").forEach((cell) => {
@@ -23,22 +23,14 @@ function expandAllUnexpanded() {
     const btnBoth = cell.querySelector("button .octicon-unfold");
 
     if (btnBoth) {
-      btnBoth.closest("button").click();
-      clicked++;
+      buttons.push(btnBoth.closest("button"));
     } else {
-      if (btnDown) {
-        btnDown.closest("button").click();
-        clicked++;
-      }
-      if (btnUp) {
-        btnUp.closest("button").click();
-        clicked++;
-      }
+      if (btnDown) buttons.push(btnDown.closest("button"));
+      if (btnUp) buttons.push(btnUp.closest("button"));
     }
   });
 
-  console.log(`ExpandAll: expanded ${clicked} diff locations.`);
-  return clicked > 0;
+  return buttons;
 }
 
 // --- Button click handler ---
@@ -52,12 +44,19 @@ function onExpandAllClicked() {
   expandAllButton.removeEventListener("click", evtListener);
   expandAllButton.removeAttribute("onclick");
 
-  let chain = () => {
-    if (expandAllUnexpanded()) {
-      setTimeout(chain, 1);
+  // Snapshot buttons visible in the initial state before clicking any
+  const buttonsToClick = snapshotExpansionButtons();
+  console.log(`ExpandAll: expanding ${buttonsToClick.length} diff locations.`);
+
+  let i = 0;
+  let clickNext = () => {
+    if (i < buttonsToClick.length) {
+      buttonsToClick[i].click();
+      i++;
+      setTimeout(clickNext, 1);
     }
   };
-  setTimeout(chain, 1);
+  setTimeout(clickNext, 1);
 }
 
 // --- Inject the Expand-all button into new GitHub PR file toolbar ---
